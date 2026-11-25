@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaxTwin — rozliczenie PIT-38 dla inwestora</title>
+  <meta name="description" content="Wrzuć wyciągi z IBKR, XTB, Trading 212 i BOSSA. TaxTwin policzy PIT-38 z kursami NBP i pokaże każdą pozycję. Zapisz się jako członek założyciel.">
+  <meta name="color-scheme" content="light">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">TaxTwin</a>
+    <nav>
+      <a href="#jak-to-dziala">Jak to działa</a>
+      <a href="#plany">Cennik</a>
+      <a href="#zapisz">Founding members</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Dla inwestorów rozliczających PIT-38</p>
+        <h1>Wszystkie wyciągi. Jedno rzetelne rozliczenie.</h1>
+        <p class="lead">
+          IBKR, XTB, Trading 212, BOSSA — wrzuć pliki, zobacz zyski, dywidendy,
+          kursy NBP i kredyt podatkowy. Bez haseł do kont maklerskich.
+        </p>
+        <div class="actions">
+          <a class="btn primary" id="founding-cta" href="mailto:lukasz.filolog@gmail.com">Zapisz się jako członek założyciel</a>
+          <a class="btn secondary" href="#plany">Zobacz cennik</a>
+        </div>
+        <p class="founding-note" id="founding-note">Pierwsze 3 osoby: <strong>19 zł/mies.</strong> przez cały czas trwania subskrypcji.</p>
+        <p class="status" id="status">Podgląd produktu — backend i płatności są w przygotowaniu.</p>
+      </div>
+
+      <aside class="card preview" aria-label="Podgląd raportu">
+        <div class="preview-head">
+          <span>PIT-38 · 2026</span>
+          <span class="pill">podgląd</span>
+        </div>
+        <dl>
+          <div><dt>Przychód</dt><dd>124 380,00 zł</dd></div>
+          <div><dt>Koszt</dt><dd>98 210,50 zł</dd></div>
+          <div><dt>Dochód</dt><dd>26 169,50 zł</dd></div>
+          <div class="total"><dt>Podatek należny</dt><dd>4 972,00 zł</dd></div>
+        </dl>
+        <p class="hint">Każda kwota ma przypisaną transakcję i kurs NBP z dnia poprzedzającego sprzedaż.</p>
+      </aside>
+    </section>
+
+    <section id="jak-to-dziala" class="section">
+      <h2>Jak to działa</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="step">1</span>
+          <h3>Wgraj wyciąg</h3>
+          <p>Plik XML, XLSX lub CSV z brokera. Nie podajesz loginów ani haseł.</p>
+        </article>
+        <article class="card">
+          <span class="step">2</span>
+          <h3>Sprawdź obliczenie</h3>
+          <p>FIFO z wielu lat, kursy NBP, straty, dywidendy i podatek zagraniczny — wszystko w detalu.</p>
+        </article>
+        <article class="card">
+          <span class="step">3</span>
+          <h3>Zweryfikuj i złóż sam</h3>
+          <p>Raport do sprawdzenia i projekt pliku. Deklarację składasz osobiście.</p>
+        </article>
+      </div>
+      <p class="disclaimer">To obliczenie pomocnicze, nie porada podatkowa. TaxTwin nie składa deklaracji w Twoim imieniu.</p>
+    </section>
+
+    <section id="plany" class="section plans">
+      <h2>Cennik</h2>
+      <p class="section-lead">Rozliczenie jest roczne. Porządek w podatkach — miesięczny.</p>
+      <div class="grid">
+        <article class="card plan">
+          <h3>Free</h3>
+          <p class="price">0 zł</p>
+          <ul>
+            <li>podgląd obliczeń</li>
+            <li>weryfikacja każdej pozycji</li>
+            <li>eksport po wykupieniu Pro</li>
+          </ul>
+          <a class="btn secondary" href="#zapisz">Dołącz do listy</a>
+        </article>
+
+        <article class="card plan featured">
+          <h3>Pro</h3>
+          <p class="price">39 zł / mies.</p>
+          <p class="alt">lub 329 zł rocznie — dwa miesiące gratis</p>
+          <ul>
+            <li>wszyscy obsługiwani brokerzy</li>
+            <li>raport i projekt do weryfikacji</li>
+            <li>miesięczny podgląd pozycji podatkowej</li>
+          </ul>
+          <div class="buy" id="buy-actions">
+            <a class="btn primary" id="buy-monthly" href="#">Kup miesięcznie</a>
+            <a class="btn secondary" id="buy-annual" href="#">Kup rocznie</a>
+          </div>
+        </article>
+
+        <article class="card plan">
+          <h3>Advisor</h3>
+          <p class="price">149 zł / mies.</p>
+          <ul>
+            <li>do 10 kont klientów</li>
+            <li>wspólny panel przeglądu</li>
+            <li>raport do przekazania klientowi</li>
+          </ul>
+          <a class="btn secondary" href="#zapisz">Zapytaj o dostęp</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="zapisz" class="cta">
+      <div>
+        <h2>Zacznij od 3 osób</h2>
+        <p>
+          Szukam trzech członków założycieli. Zapisz się e-mailem — odezwę się, gdy backend
+          i płatności będą gotowe. Bez newslettera i bez sprzedaży danych.
+        </p>
+      </div>
+      <a class="btn light" id="founding-cta-2" href="mailto:lukasz.filolog@gmail.com">Napisz: członek założyciel</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>TaxTwin — narzędzie do obliczeń, nie porada podatkowa.</span>
+    <span>Bez haseł do kont maklerskich. Dane usuwane na żądanie.</span>
+  </footer>
+</body>
+</html>
