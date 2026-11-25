@@ -4,7 +4,7 @@
   var defaults = {
     contactEmail: 'lukasz.filolog@gmail.com',
     foundingPrice: '19 zł/mies.',
-    status: 'Podgląd produktu — backend i płatności są w przygotowaniu.',
+    status: 'Podgląd produktu – backend i płatności są w przygotowaniu.',
     paymentLinks: { monthly: '', annual: '' }
   };
 
@@ -31,7 +31,7 @@
     var statusNode = document.getElementById('status');
     if (statusNode) statusNode.textContent = status;
 
-    var subject = 'TaxTwin — członek założyciel';
+    var subject = 'TaxTwin – członek założyciel';
     var body = 'Cześć,\n\nChcę dołączyć do pierwszych 3 członków założycieli TaxTwin (' +
       foundingPrice + ').\n\nImię / e-mail kontaktowy:\n\nKraj i brokerzy, z których korzystam:\n\n';
     setMailto(document.getElementById('founding-cta'), email, subject, body);

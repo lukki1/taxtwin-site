@@ -10,7 +10,7 @@ Edit `site/config.json` in the private repo and push to `main`. The publish work
 {
   "contactEmail": "you@example.com",
   "foundingPrice": "19 zł/mies.",
-  "status": "Podgląd produktu — backend i płatności są w przygotowaniu.",
+  "status": "Podgląd produktu – backend i płatności są w przygotowaniu.",
   "paymentLinks": {
     "monthly": "https://buy.stripe.com/...",
     "annual": "https://buy.stripe.com/..."
